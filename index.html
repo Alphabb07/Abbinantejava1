@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-Abbinante-Java</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+        let punteggio = 0;
+        let domanda1 = prompt("Qual e' la capitale dell'italia?  ")
+        if(domanda1 === null){
+            alert("Attenzione, inserire una risposta valida!")
+        }
+        if(domanda1.toLowerCase() === "roma"){
+            alert("Corretto")
+            punteggio=punteggio+1;
+
+        } else{
+            alert("Errato")
+        }
+
+        let domanda2 = prompt("Quanto fa 7x8? ")
+        if(domanda2 === null){
+            alert("Attenzione, inserire una risposta valida!")
+        }
+        if(domanda2 === "56"){
+            alert("Corretto")
+            punteggio=punteggio+1;
+        } else{
+            alert("Errato")
+
+        } 
+
+        let domanda3 = prompt("chi ha vinto il campionato di serie a? 2023/24? ")
+        if(domanda3 === null){
+            alert("Attenzione inserire una risposta valida!")
+        }
+        if(domanda3.toLowerCase() === "inter"){
+            alert("Corretto")
+            punteggio=punteggio+1;
+        } else {
+            alert("Errato")
+        }
+        let domanda4 = prompt("Dove si trova il lago di garda?")
+        if(domanda4 === null){
+            alert("Inserire una risposta valida!")
+        } 
+        if(domanda4.toLowerCase() === "lombardia"){
+            alert("Corretto")
+            punteggio=punteggio+1;
+        } else {
+
+            alert("Errato")
+        }
+        let domanda5 = prompt("in che anno e' scoppiata la prima guerra mondiale?")
+        if(domanda5 === null){
+            alert("Inserire una risposta valida!")
+        } 
+        if(domanda5.toLowerCase() === "1914"){
+            alert("Risposta corretta, il tuo punteggio e' di " + punteggio)
+        } else{
+            alert("Risposta errata, il tuo punteggio e' di " + punteggio)
+        }
+    </script>
+</body>
+</html>
